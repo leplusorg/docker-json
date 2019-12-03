@@ -9,7 +9,7 @@ Assuming that you have a file `foo.json` in your current working directory that 
 ### Mac/Linux
 
 ```
-$ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/jq jq '.' /tmp/foo.json
+$ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/json jq '.' /tmp/foo.json
 ```
 
 ### Windows
@@ -17,13 +17,13 @@ $ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" tho
 In `cmd`:
 
 ```
-$ docker run --rm -it --net=none -v "%cd%:/tmp" thomasleplus/jq jq '.' /tmp/foo.json
+$ docker run --rm -it --net=none -v "%cd%:/tmp" thomasleplus/json jq '.' /tmp/foo.json
 ```
 
 In PowerShell:
 
 ```
-$ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/jq jq '.' /tmp/foo.json
+$ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/json jq '.' /tmp/foo.json
 ```
 
 ## Help
@@ -31,5 +31,5 @@ $ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/jq jq '.' /tmp/fo
 To know more command line options of `jq`:
 
 ```
-$ docker run --rm -it --net=none thomasleplus/jq jq -h
+$ docker run --rm -it --net=none thomasleplus/json jq -h
 ```
