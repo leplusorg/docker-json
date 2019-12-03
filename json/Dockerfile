@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --update --no-cache add jq nodejs-npm \
+RUN apk --update --no-cache add jq npm \
     && rm -rf /var/cache/apk/*
     
 RUN npm install -g jsonlint \
