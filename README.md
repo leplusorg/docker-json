@@ -9,13 +9,13 @@ Let's say that you have a file `foo.json` in your current working directory that
 ### Mac/Linux
 
 ```
-cat foo.json | docker run --rm -it --net=none thomasleplus/json jq '.'
+cat foo.json | docker run --rm -i --net=none thomasleplus/json jq '.'
 ```
 
 ### Windows
 
 ```
-type foo.json | docker run --rm -it --net=none thomasleplus/json jq '.'
+type foo.json | docker run --rm -i --net=none thomasleplus/json jq '.'
 ```
 
 ## Example using the filesystem
@@ -25,7 +25,7 @@ Same thing, assuming that you have a file `foo.json` in your current working dir
 ### Mac/Linux
 
 ```
-docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/json jq '.' /tmp/foo.json
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/json jq '.' /tmp/foo.json
 ```
 
 ### Windows
@@ -33,13 +33,13 @@ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thoma
 In `cmd`:
 
 ```
-docker run --rm -it --net=none -v "%cd%:/tmp" thomasleplus/json jq '.' /tmp/foo.json
+docker run --rm -t --net=none -v "%cd%:/tmp" thomasleplus/json jq '.' /tmp/foo.json
 ```
 
 In PowerShell:
 
 ```
-docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/json jq '.' /tmp/foo.json
+docker run --rm -t --net=none -v "${PWD}:/tmp" thomasleplus/json jq '.' /tmp/foo.json
 ```
 
 ## Help
@@ -47,5 +47,5 @@ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/json jq '.' /tmp/fo
 To know more command line options of `jq`:
 
 ```
-docker run --rm -it --net=none thomasleplus/json jq -h
+docker run --rm --net=none thomasleplus/json jq -h
 ```
