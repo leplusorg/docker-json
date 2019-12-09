@@ -1,6 +1,9 @@
 FROM alpine:latest
 
-RUN apk --update --no-cache add jq npm \
+RUN apk --update --no-cache add \
+    jq \
+    npm \
+    py3-setuptools \
     && rm -rf /var/cache/apk/*
     
 RUN npm install -g jsonlint \
