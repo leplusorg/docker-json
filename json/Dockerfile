@@ -5,3 +5,5 @@ RUN apk --update --no-cache add jq npm \
     
 RUN npm install -g jsonlint \
     && npm install -g prettyjson
+
+RUN pip3 install --no-cache-dir json2yaml
