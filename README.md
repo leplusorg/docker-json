@@ -7,6 +7,7 @@ Docker container with utilities to process JSON data (jq, jsonlint...).
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/json)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/json)
 ![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/json)
+![Docker Version](https://img.shields.io/docker/v/thomasleplus/json?sort=semver)
 
 ## Example without using the filesystem
 
