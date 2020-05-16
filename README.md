@@ -2,6 +2,11 @@
 
 Docker container with utilities to process JSON data (jq, jsonlint...).
 
+![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/json.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/json.svg)
+![Docker Automated](https://img.shields.io/docker/automated/thomasleplus/json.svg)
+![Docker Build](https://img.shields.io/docker/build/thomasleplus/json.svg)
+
 ## Example without using the filesystem
 
 Let's say that you have a file `foo.json` in your current working directory that you want to process with jq:
