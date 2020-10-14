@@ -5,6 +5,7 @@ RUN apk --update --no-cache add \
     npm \
     openssl \
     py3-setuptools \
+    py3-pip \
     && rm -rf /var/cache/apk/*
     
 RUN npm install -g jsonlint \
