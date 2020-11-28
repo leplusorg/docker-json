@@ -2,7 +2,7 @@
 
 Docker container with utilities to process JSON data (jq, jsonlint...).
 
-![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-json/Docker%20Image%20CI)
+![Docker Build](https://github.com/thomasleplus/docker-json/workflows/Docker/badge.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/json)
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/json)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/json)
