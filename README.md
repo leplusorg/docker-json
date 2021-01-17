@@ -2,12 +2,12 @@
 
 Docker container with utilities to process JSON data (jq, jsonlint...).
 
-![Docker Build](https://github.com/thomasleplus/docker-json/workflows/Docker/badge.svg)
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/json)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/json)
-![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/json)
-![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/json)
-![Docker Version](https://img.shields.io/docker/v/thomasleplus/json?sort=semver)
+[![Docker Build](https://github.com/thomasleplus/docker-json/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-json/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/json)](https://hub.docker.com/r/thomasleplus/json)
+[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/json)](https://hub.docker.com/r/thomasleplus/json)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/json)](https://hub.docker.com/r/thomasleplus/json)
+[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/json)](https://hub.docker.com/r/thomasleplus/json)
+[![Docker Version](https://img.shields.io/docker/v/thomasleplus/json?sort=semver)](https://hub.docker.com/r/thomasleplus/json)
 
 ## Example without using the filesystem
 
