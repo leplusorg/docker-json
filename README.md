@@ -51,7 +51,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/json jq '.' /tmp/foo.js
 
 ## Help
 
-To know more command line options of `jq`:
+To know more command-line options of `jq`:
 
 ```bash
 docker run --rm --net=none leplusorg/json jq -h
