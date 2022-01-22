@@ -13,15 +13,15 @@ Docker container with utilities to process JSON data (jq, jsonlint...).
 
 Let's say that you have a file `foo.json` in your current working directory that you want to process with jq:
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 cat foo.json | docker run --rm -i --net=none leplusorg/json jq '.'
 ```
 
-### Windows
+**Windows**
 
-```
+```batch
 type foo.json | docker run --rm -i --net=none leplusorg/json jq '.'
 ```
 
@@ -29,23 +29,23 @@ type foo.json | docker run --rm -i --net=none leplusorg/json jq '.'
 
 Same thing, assuming that you have a file `foo.json` in your current working directory that you want to process with jq:
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/json jq '.' /tmp/foo.json
 ```
 
-### Windows
+**Windows**
 
 In `cmd`:
 
-```
+```batch
 docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/json jq '.' /tmp/foo.json
 ```
 
 In PowerShell:
 
-```
+```pwsh
 docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/json jq '.' /tmp/foo.json
 ```
 
@@ -53,7 +53,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/json jq '.' /tmp/foo.js
 
 To know more command line options of `jq`:
 
-```
+```bash
 docker run --rm --net=none leplusorg/json jq -h
 ```
 
