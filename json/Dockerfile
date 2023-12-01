@@ -1,4 +1,4 @@
-FROM alpine:3.18.4
+FROM alpine:3.18.5
 
 # hadolint ignore=DL3013,DL3016,DL3018
 RUN apk --update --no-cache add \
