@@ -11,4 +11,4 @@ RUN apk --update --no-cache add \
     && npm install -g jsonlint \
     && npm install -g prettyjson \
     && npm install -g jwt-cli \
-    && pip3 install --no-cache-dir --upgrade json2yaml pyjwt
+    && pip3 install --no-cache-dir --upgrade --break-system-packages json2yaml pyjwt
