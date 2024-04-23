@@ -19,7 +19,7 @@ RUN apk --update --no-cache add \
     && rm -rf /var/cache/apk/* \
     && npm install -g jsonlint \
     && npm install -g prettyjson \
-    && npm install -g jwt-cli \
+    && npm install -g jwt-cli
 
 # hadolint ignore=DL3013
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages json2yaml pyjwt
