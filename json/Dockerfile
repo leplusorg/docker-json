@@ -11,6 +11,7 @@ ARG USER_GECOS=Default
 
 # hadolint ignore=DL3016,DL3018
 RUN apk --update --no-cache add \
+    jose \
     jq \
     npm \
     openssl \
