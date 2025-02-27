@@ -7,6 +7,8 @@ Docker container with utilities to process JSON data (jq, jsonlint...).
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/json)](https://hub.docker.com/r/leplusorg/json)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/json)](https://hub.docker.com/r/leplusorg/json)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/json?sort=semver)](https://hub.docker.com/r/leplusorg/json)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10070/badge)](https://bestpractices.coreinfrastructure.org/projects/10070)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/leplusorg/docker-json/badge)](https://securityscorecards.dev/viewer/?uri=github.com/leplusorg/docker-json)
 
 ## Example without using the filesystem
 
