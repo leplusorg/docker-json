@@ -15,7 +15,6 @@ RUN apk --update --no-cache add \
     jq \
     npm \
     openssl \
-    py3-setuptools \
     py3-pip \
     && rm -rf /var/cache/apk/*
 
@@ -24,7 +23,7 @@ SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
     json2yaml==1.2.0 \
     PyJWT==2.10.1 \
-    && msg="$(pip list --outdated | grep -i -e json2yaml -e PyJWT || true)" \
+    && msg="$(pip3 list --outdated | grep -i -e '^json2yaml ' -e '^PyJWT ' || true)" \
     && if [ -n "${msg}" ]; then \
        >&2 echo "ERROR: outdated: ${msg}" ; \
        exit 1 ; \
@@ -34,11 +33,7 @@ RUN npm install -g \
     jsonlint@1.6.3 \
     jwt-cli@2.0.0 \
     prettyjson@1.2.5 \
-    && msg="$(npm outdated --global | grep -i -e jsonlint -e jwt-cli -e prettyjson || true)" \
-    && if [ -n "${msg}" ]; then \
-       >&2 echo "ERROR: outdated: ${msg}" ; \
-       exit 1 ; \
-    fi
+    && npm outdated --global
 
 RUN adduser \
   --home "${USER_HOME}" \
