@@ -22,8 +22,16 @@ RUN apk --update --no-cache add \
     && npm install -g prettyjson \
     && npm install -g jwt-cli
 
-# hadolint ignore=DL3013
-RUN pip3 install --no-cache-dir --upgrade --break-system-packages json2yaml pyjwt
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+
+RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
+    json2yaml==1.2.0 \
+    PyJWT==2.10.1 \
+    && msg="$(pip list --outdated | grep -i -e json2yaml -e PyJWT || true)" \
+    && if [ -n "${msg}" ]; then \
+       >&2 echo "ERROR: outdated: ${msg}" ; \
+       exit 1 ; \
+    fi
 
 RUN adduser \
   --home "${USER_HOME}" \
