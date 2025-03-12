@@ -9,15 +9,21 @@ ARG USER_HOME=/home/default
 ARG USER_ID=1000
 ARG USER_GECOS=Default
 
-SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
-# hadolint ignore=DL3018
-RUN apk --update --no-cache add \
-    jose \
-    jq \
-    npm \
-    openssl \
-    py3-pip \
+# hadolint ignore=DL3019
+RUN apk -U upgrade \
+    && apk add \
+    jose=13-r0 \
+    jq=1.7.1-r0 \
+    npm=10.9.1-r0 \
+    openssl=3.3.3-r0 \
+    py3-pip=24.3.1-r0 \
+    python3=3.12.9-r0 \
+    && if apk -u list | grep -q -e . ; then \
+      apk -u list ; \
+      exit 1 ; \
+    fi \
     && rm -rf /var/cache/apk/*
 
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
