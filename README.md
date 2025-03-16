@@ -2,7 +2,7 @@
 
 Docker container with utilities to process JSON data (jq, jsonlint...).
 
-[![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](https://github.com/leplusorg/docker-json/blob/main/json/Dockerfile)
+[![Dockerfile](json/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-json/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-json/actions?query=workflow:"Docker")
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/json)](https://hub.docker.com/r/leplusorg/json)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/json)](https://hub.docker.com/r/leplusorg/json)
