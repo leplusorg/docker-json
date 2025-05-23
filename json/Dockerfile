@@ -19,7 +19,7 @@ RUN apk -U upgrade \
     npm=10.9.1-r0 \
     openssl=3.3.3-r0 \
     py3-pip=24.3.1-r0 \
-    python3=3.12.10-r0 \
+    python3=3.12.10-r1 \
     && if apk -u list | grep -q -e . ; then \
       apk -u list ; \
       exit 1 ; \
