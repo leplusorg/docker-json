@@ -1,6 +1,6 @@
 # JSON
 
-Docker container with utilities to process JSON data (jq, jsonlint, prettyjson, jose, json2yaml...).
+Multi-platform Docker container with utilities to process JSON data (jq, jsonlint, prettyjson, jose, json2yaml...).
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](json/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-json/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-json/actions?query=workflow:"Docker")
