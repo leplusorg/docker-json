@@ -29,16 +29,6 @@ RUN apk -U upgrade \
     && apk cache clean \
     && rm -rf /var/cache/apk/*
 
-RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
-    csvkit==2.1.0 \
-    json2yaml==1.2.0 \
-    PyJWT==2.10.1 \
-    && msg="$(pip3 list --outdated | grep -i -e '^json2yaml ' -e '^PyJWT ' || true)" \
-    && if [ -n "${msg}" ]; then \
-       >&2 echo "ERROR: outdated: ${msg}" ; \
-       exit 1 ; \
-    fi
-
 RUN npm install -g \
     jsonlint@1.6.3 \
     jwt-cli@2.0.0 \
@@ -57,3 +47,13 @@ USER "${USER_NAME}"
 ENV HOME="${USER_HOME}"
 
 WORKDIR "${HOME}"
+
+RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
+    csvkit==2.1.0 \
+    json2yaml==1.2.0 \
+    PyJWT==2.10.1 \
+    && msg="$(pip3 list --outdated | grep -i -e '^json2yaml ' -e '^PyJWT ' || true)" \
+    && if [ -n "${msg}" ]; then \
+       >&2 echo "ERROR: outdated: ${msg}" ; \
+       exit 1 ; \
+    fi
