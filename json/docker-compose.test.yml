@@ -4,4 +4,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: "sh -c '[ $$(id -u) -eq 1000 ] && jq --version'"
+    command: |
+      sh -c '
+        set -euo pipefail
+        if [ $(id -u) -ne 1000 ]; then
+          exit 1
+        fi
+        base64 --version # coreutils
+        csvsql --version # csvkit
+        curl --version # curl
+        git --version # git
+        jq --version # jq
+        json2yaml --version # json2yaml
+        npm --version # npm
+        openssl --version # openssl
+        pip --version # py3-pip
+        python --version # python3
+      '

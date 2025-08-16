@@ -33,8 +33,7 @@ RUN apk -U upgrade \
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
     csvkit==2.1.0 \
     json2yaml==1.2.0 \
-    PyJWT==2.10.1 \
-    && msg="$(pip3 list --outdated | grep -i -e '^json2yaml ' -e '^PyJWT ' || true)" \
+    && msg="$(pip3 list --outdated | grep -i -e '^json2yaml ' || true)" \
     && if [ -n "${msg}" ]; then \
        >&2 echo "ERROR: outdated: ${msg}" ; \
        exit 1 ; \
