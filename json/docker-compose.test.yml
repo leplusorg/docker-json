@@ -16,9 +16,12 @@ services:
         git --version # git
         jq --version # jq
         json2yaml --version # json2yaml
+        jsonlint --help # jsonlint
+        jwt --version # jwt-cli
         npm --version # npm
         openssl --version # openssl
         pip --version # py3-pip
         pipx --version # pipx
+        echo | prettyjson # prettyjson
         python --version # python3
       '
