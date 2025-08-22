@@ -35,8 +35,7 @@ RUN pipx ensurepath --global \
 RUN npm install -g \
     jsonlint@1.6.3 \
     jwt-cli@2.0.0 \
-    prettyjson@1.2.5 \
-    && npm outdated --global
+    prettyjson@1.2.5
 
 RUN adduser \
   --home "${USER_HOME}" \
