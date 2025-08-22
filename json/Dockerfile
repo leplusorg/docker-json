@@ -19,7 +19,7 @@ RUN apk -U upgrade \
     git=2.49.1-r0 \
     jose=14-r0 \
     jq=1.8.0-r0 \
-    npm=11.3.0-r0 \
+    npm=11.3.0-r1 \
     openssl=3.5.2-r0 \
     pipx=1.7.1-r0 \
     py3-pip=25.1.1-r0 \
