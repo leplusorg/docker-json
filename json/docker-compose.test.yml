@@ -16,6 +16,7 @@ services:
         git --version # git
         jq --version # jq
         json2yaml --version # json2yaml
+        jslint --version # jsonlint
         jsonlint --help # jsonlint
         npm --version # npm
         openssl --version # openssl

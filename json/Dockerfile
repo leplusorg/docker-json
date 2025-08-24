@@ -33,6 +33,7 @@ RUN pipx ensurepath --global \
     json2yaml==1.2.0
 
 RUN npm install -g \
+    jslint@0.12.1 \
     jsonlint@1.6.3 \
     jwt-cli@2.0.0 \
     prettyjson@1.2.5

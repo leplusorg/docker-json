@@ -15,4 +15,6 @@ jobs:
       - name: Check the versions
         shell: bash
         run: |
+          set -euo pipefail
+          IFS=$'\n\t'
           docker run --pull always -t --user root "leplusorg/${GITHUB_REPOSITORY#*/docker-}:main" npm outdated --global
