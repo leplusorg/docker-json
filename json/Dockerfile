@@ -12,8 +12,8 @@ ARG USER_GECOS=Default
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 # hadolint ignore=DL3019
-RUN apk upgrade –-no-cache \
-    && apk add –-no-cache \
+RUN apk upgrade --no-cache \
+    && apk add --no-cache \
     coreutils=9.7-r1 \
     curl=8.14.1-r1 \
     git=2.49.1-r0 \
@@ -25,7 +25,7 @@ RUN apk upgrade –-no-cache \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
     yq-go=4.46.1-r1 \
-    && apk cache clean \
+    && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
 RUN pipx ensurepath --global \
