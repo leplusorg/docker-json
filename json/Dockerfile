@@ -12,8 +12,8 @@ ARG USER_GECOS=Default
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 # hadolint ignore=DL3019
-RUN apk -U upgrade \
-    && apk add \
+RUN apk upgrade –no-cache \
+    && apk add –no-cache \
     coreutils=9.7-r1 \
     curl=8.14.1-r1 \
     git=2.49.1-r0 \
