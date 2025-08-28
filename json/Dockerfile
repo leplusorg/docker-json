@@ -37,7 +37,8 @@ RUN npm install -g \
     jsonlint@1.6.3 \
     jwt-cli@2.0.0 \
     prettier@3.6.2 \
-    prettyjson@1.2.5
+    prettyjson@1.2.5 \
+    v8r@5.1.0
 
 RUN adduser \
   --home "${USER_HOME}" \

@@ -26,4 +26,5 @@ services:
         prettier --version # prettier
         echo | prettyjson # prettyjson
         python --version # python3
+        v8r --version # v8r
       '
