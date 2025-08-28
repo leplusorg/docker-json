@@ -15,6 +15,7 @@ services:
         csvsql --version # csvkit
         curl --version # curl
         git --version # git
+        jf -v # jsonfmt
         jq --version # jq
         json2yaml --version # json2yaml
         jslint --version # jsonlint
