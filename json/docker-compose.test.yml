@@ -21,6 +21,7 @@ services:
         grep --version # grep
         jf -v # jsonfmt
         jp --version # jp
+        jsonpath-plus <(echo '{}') / # jsonpath-plus
         jq --version # jq
         jslint --version # jsonlint
         json2yaml --version # json2yaml

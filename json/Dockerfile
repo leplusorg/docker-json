@@ -42,6 +42,7 @@ RUN pipx ensurepath --global \
 RUN npm install -g \
     jslint@0.12.1 \
     jsonlint@1.6.3 \
+    jsonpath-plus@10.3.0 \
     jwt-cli@2.0.0 \
     prettier@3.6.2 \
     prettyjson@1.2.5 \
