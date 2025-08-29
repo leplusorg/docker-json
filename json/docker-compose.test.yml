@@ -20,6 +20,7 @@ services:
         git --version # git
         grep --version # grep
         jf -v # jsonfmt
+        jp --version # jp
         jq --version # jq
         jslint --version # jsonlint
         json2yaml --version # json2yaml

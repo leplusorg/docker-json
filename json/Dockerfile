@@ -21,6 +21,7 @@ RUN apk upgrade --no-cache \
     git=2.49.1-r0 \
     grep=3.12-r0 \
     jose=14-r0 \
+    jp=0.3.0-r2 \
     jq=1.8.0-r0 \
     npm=11.3.0-r1 \
     openssl=3.5.2-r0 \
