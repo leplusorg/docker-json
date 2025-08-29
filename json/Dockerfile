@@ -16,6 +16,7 @@ RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.7-r1 \
     curl=8.14.1-r1 \
+    dasel=2.8.1-r6 \
     git=2.49.1-r0 \
     jose=14-r0 \
     jq=1.8.0-r0 \

@@ -14,6 +14,7 @@ services:
         base64 --version # coreutils
         csvsql --version # csvkit
         curl --version # curl
+        dasel --version # dasel
         git --version # git
         jf -v # jsonfmt
         jq --version # jq
