@@ -11,12 +11,14 @@ services:
         if [ $$(id -u) -ne 1000 ]; then
           exit 1
         fi
+        awk --version # gawk
         base64 --version # coreutils
         csvsql --version # csvkit
         curl --version # curl
         dasel --version # dasel
         echo | prettyjson # prettyjson
         git --version # git
+        grep --version # grep
         jf -v # jsonfmt
         jq --version # jq
         jslint --version # jsonlint
