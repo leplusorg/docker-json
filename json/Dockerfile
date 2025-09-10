@@ -34,9 +34,8 @@ RUN apk upgrade --no-cache \
 RUN pipx ensurepath --global \
     && pipx install --global \
     csvkit==2.1.0 \
-    remarshal==1.2.0 \
-    json2yaml==1.2.0 \
-    jsonfmt==0.2.7
+    jsonfmt==0.2.7 \
+    remarshal==1.2.0
 
 RUN npm install -g \
     jslint@0.12.1 \

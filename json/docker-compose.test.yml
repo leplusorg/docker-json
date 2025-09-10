@@ -24,7 +24,6 @@ services:
         jsonpath-plus <(echo '{}') / # jsonpath-plus
         jq --version # jq
         jslint --version # jsonlint
-        json2yaml --version # json2yaml
         jsonlint --help # jsonlint
         npm --version # npm
         openssl --version # openssl
