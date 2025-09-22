@@ -25,6 +25,7 @@ services:
         jq --version # jq
         jslint --version # jsonlint
         jsonlint --help # jsonlint
+        mlr --version # miller
         npm --version # npm
         openssl --version # openssl
         pandoc --version # pandoc
