@@ -22,7 +22,7 @@ RUN apk upgrade --no-cache \
     jose=14-r0 \
     jp=0.3.0-r2 \
     jq=1.8.0-r0 \
-    miller=6.13.0-r7 \
+    miller=6.13.0-r8 \
     npm=11.3.0-r1 \
     openssl=3.5.4-r0 \
     pandoc-cli=3.6.4-r0 \
