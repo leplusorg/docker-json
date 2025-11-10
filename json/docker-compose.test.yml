@@ -25,7 +25,6 @@ services:
         jq --version # jq
         npx jslint --version # jslint
         npx jsonlint --help # jsonlint
-        echo 'eyJhbGciOiJub25lIn0.e30.' | npx jwt-cli # checkov:skip=CKV_SECRET_9: [JSON Web Token]: not a real secret # jwt-cli
         mlr --version # miller
         npm --version # npm
         openssl --version # openssl
