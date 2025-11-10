@@ -39,14 +39,11 @@ RUN pipx ensurepath --global \
     && xargs -a /tmp/requirements.txt -n 1 pipx install --global \
     && rm -f /tmp/requirements.txt
 
-RUN npm install -g \
-    jslint@0.12.1 \
-    jsonlint@1.6.3 \
-    jsonpath-plus@10.3.0 \
-    jwt-cli@2.0.0 \
-    prettier@3.6.2 \
-    prettyjson@1.2.5 \
-    v8r@5.1.0
+COPY package.json /tmp/package.json
+
+RUN jq -r '.dependencies | to_entries[] | "\(.key)@\(.value)"' /tmp/package.json \
+    | xargs -n 1 npm install -g \
+    && rm -f /tmp/package.json
 
 RUN adduser \
   --home "${USER_HOME}" \
