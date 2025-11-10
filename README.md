@@ -58,6 +58,12 @@ To know more command-line options of `jq`:
 docker run --rm --net=none leplusorg/json jq -h
 ```
 
+## NPM Packages
+
+Use the `npx` command to run command-line tools coming from npm
+packages. This ensures isolation between the different packages
+(including potentially conflicting dependencies).
+
 ## Software Bill of Materials (SBOM)
 
 To get the SBOM for the latest image (in SPDX JSON format), use the
