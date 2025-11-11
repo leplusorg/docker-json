@@ -26,7 +26,6 @@ services:
         npx jslint --version # jslint
         npx jsonlint --help # jsonlint
         mlr --version # miller
-        npm --version # npm
         openssl --version # openssl
         pandoc --version # pandoc
         pip --version # py3-pip
