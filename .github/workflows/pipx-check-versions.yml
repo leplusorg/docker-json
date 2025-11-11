@@ -42,7 +42,7 @@ jobs:
                   current_version="${BASH_REMATCH[2]}"
                   # Get latest version from PyPI using pip index versions
                   # The version in parentheses on the first line is the latest
-                  latest_version="$(\pip index versions "csvkit" 2>/dev/null | \grep -e '^Available versions: ' | \cut -d ',' -f 1 | \sed -e 's/^.*: //')"
+                  latest_version="$(\pip index versions "csvkit" 2>/dev/null | { \grep -e '^Available versions: ' || true } | \cut -d ',' -f 1 | \sed -e 's/^.*: //')"
                   if [ "${current_version}" != "${latest_version}" ]; then
                       echo "${package}: ${current_version} -> ${latest_version}"
                       rc=$((rc+1))
