@@ -23,7 +23,6 @@ services:
         jp --version # jp
         npx jsonpath-plus <(echo '{}') / # jsonpath-plus
         jq --version # jq
-        npx jslint --version # jslint
         npx jsonlint --help # jsonlint
         mlr --version # miller
         openssl --version # openssl

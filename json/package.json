@@ -2,9 +2,8 @@
   "name": "docker-json",
   "version": "0.0.0",
   "dependencies": {
-    "jslint": "0.12.1",
     "jsonpath-plus": "10.3.0",
-    "prettier": "3.6.2",
+    "prettier": "3.7.3",
     "prettyjson": "1.2.5",
     "v8r": "5.1.0"
   }
