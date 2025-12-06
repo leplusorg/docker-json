@@ -15,14 +15,14 @@ RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.7-r1 \
     curl=8.14.1-r2 \
-    dasel=2.8.1-r8 \
+    dasel=2.8.1-r9 \
     gawk=5.3.2-r2 \
     git=2.49.1-r0 \
     grep=3.12-r0 \
     jose=14-r0 \
     jp=0.3.0-r2 \
     jq=1.8.1-r0 \
-    miller=6.13.0-r8 \
+    miller=6.13.0-r9 \
     npm=11.6.4-r0 \
     openssl=3.5.4-r0 \
     pandoc-cli=3.6.4-r0 \
