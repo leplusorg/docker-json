@@ -22,14 +22,14 @@ RUN apk upgrade --no-cache \
     jose=14-r0 \
     jp=0.4.0-r0 \
     jq=1.8.1-r0 \
-    miller=6.15.0-r4 \
+    miller=6.15.0-r5 \
     npm=11.6.3-r0 \
     openssl=3.5.5-r0 \
     pandoc-cli=3.8.2.1-r0 \
     pipx=1.8.0-r0 \
     py3-pip=25.1.1-r1 \
     python3=3.12.12-r0 \
-    yq-go=4.49.2-r2 \
+    yq-go=4.49.2-r3 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
