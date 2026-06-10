@@ -13,23 +13,23 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
-    coreutils=9.8-r1 \
-    curl=8.19.0-r0 \
+    coreutils=9.11-r0 \
+    curl=8.20.0-r1 \
     dasel=2.8.1-r15 \
     gawk=5.3.2-r2 \
-    git=2.52.0-r0 \
+    git=2.54.0-r0 \
     grep=3.12-r0 \
     jose=14-r0 \
     jp=0.4.0-r0 \
     jq=1.8.1-r0 \
-    miller=6.15.0-r8 \
-    npm=11.11.0-r0 \
-    openssl=3.5.6-r0 \
-    pandoc-cli=3.8.2.1-r0 \
-    pipx=1.8.0-r0 \
-    py3-pip=25.1.1-r1 \
-    python3=3.12.13-r0 \
-    yq-go=4.49.2-r6 \
+    miller=6.16.0-r5 \
+    npm=11.12.1-r0 \
+    openssl=3.5.7-r0 \
+    pandoc-cli=3.10-r0 \
+    pipx=1.14.0-r0 \
+    py3-pip=26.1.2-r0 \
+    python3=3.14.5-r0 \
+    yq-go=4.53.3-r0 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
