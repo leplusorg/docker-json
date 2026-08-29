@@ -24,7 +24,7 @@ RUN apk upgrade --no-cache \
     jq=1.8.1-r0 \
     miller=6.16.0-r5 \
     npm=11.12.1-r0 \
-    openssl=3.5.7-r0 \
+    openssl=3.5.8-r0 \
     pandoc-cli=3.10-r0 \
     pipx=1.14.0-r0 \
     py3-pip=26.1.2-r0 \
